@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ak-angular-app
-        image: ananthkannan/myspringbootapp:latest
+        image: shivaladdu/spring3:v1.1
         ports:
         - containerPort: 8085
         
@@ -31,4 +31,4 @@ spec:
     - protocol: TCP
       port: 8085
       targetPort: 8085
-  type: LoadBalancer
+  type: ClusterIP
